@@ -1,0 +1,137 @@
+.menu {
+    padding: 115px 0;
+    background-color: #f5f5f5;
+
+
+    .container_menu {
+        flex-direction: column;
+        
+        h2 {
+            text-align: center;
+            color: #151515;
+        }
+
+        .menu_table {
+            margin-top: 60px;
+            
+
+            .table_top {
+                background-color: #323232;
+                border-radius: 10px 10px 0 0;
+                text-align: center;
+                
+                
+                ul {
+                    padding: 40px 30px;
+                    display: flex;
+                    text-align: center;
+                    flex-direction: column;
+                    // line-height: 0;
+
+                    li {
+                        display: inline-block;  
+                        
+                        a {
+                            width: 100%;
+                            position: relative;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            color: rgba(255,255,255,.4);
+                            padding: 15px 25px;
+                            font-size: 15px;
+                            letter-spacing: 0;
+                            transition: all .3s ease-in-out;
+                            cursor: pointer;
+
+                        }
+                        
+                        .active {
+                            color: #fff;
+                        }
+
+
+                        
+
+                        a:hover, a:focus {
+                            color: #fff;
+                        }
+                    }
+
+                    li+ li {
+                        margin-top: 20px;
+                    }
+
+                }
+            }
+
+            .table_main {
+                padding: 55px 30px;
+                background-color: #fff;
+                
+                .content {
+
+                    .column_menu {
+                        display: block;
+                        visibility: hidden;
+                        height: 0;
+                        overflow: hidden;
+
+                        &.show {
+                            visibility: visible;
+                            height: auto;
+                            overflow: visible;
+                        }
+
+                        
+                        
+
+                        .dish {
+                            max-width: 670px;
+                            margin: 0 auto;
+                            text-align: left;
+    
+                            
+    
+                                p {
+                                    font-size: 18px;
+                                    color: #41a451;
+                                    font-weight: 500;
+                                }
+    
+                            h4 {
+                                font-weight: 400;
+                                margin: 15px 0;
+    
+                                a {
+                                    color: inherit;    
+                                }
+                                
+                                a ,a:focus, a:active, a:hover {
+                                    text-decoration: none;
+                                }
+                                a:hover {
+                                    color:$color-hover;
+                                }
+                            }
+    
+                            .dish-text {
+                                
+                                p {
+                                    color: $color-blue;
+                                    opacity: 0.7;
+                                }
+                            }
+    
+                        }
+    
+                        .dish + .dish {
+                            margin-top: 40px;
+                        }
+    
+                    }
+                }
+                
+            }
+        }
+    }
+}

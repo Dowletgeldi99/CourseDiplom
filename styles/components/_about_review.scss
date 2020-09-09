@@ -1,0 +1,84 @@
+.about_review {
+    background: url('../images/bg-bunner-2.jpg') 88% 27% no-repeat;
+    
+    .bg_dark {
+        position: relative;
+        z-index: 1;
+    
+        .container {
+            padding-bottom: 50px;
+            position: relative;
+
+            h2 {
+                color: #fff;
+                text-align: center;
+            }
+
+            .carousel {
+                padding-bottom: 100px;
+
+                li {
+                    background: none;
+                    opacity: 1;
+                
+                    
+                    .carousel-img {
+                        position: relative;
+                        width: 60px;
+                        height: 60px;
+    
+    
+                        img {
+                            position: absolute;
+                            left: 0;
+                            top: 0; 
+                            border-radius: 50%;
+                            width: 100%;
+                            box-shadow: 4px 8px 8px rgba(21,21,21,.25);
+                            transition: all .3s;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                li + li {
+                    margin-left: 50px;
+                }
+                
+                .carousel-item-center {
+                    width: 820px;
+                    position: relative;
+                    margin-left: auto;
+                    margin-right: auto;
+    
+                    .carousel-item-text {
+                        font-style: italic;
+                        font-size: 18px;
+                        line-height: 30px;
+                        letter-spacing: .08em;
+                        color: #fff;
+                    }
+    
+                    .carousel-item-name {
+                        color: #fff;
+                        margin-top: 20px;
+                        font-size: 18px;
+                        line-height: 28px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    
+    .bg_dark::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg,rgba(0,0,0,0.22) 0%,rgba(0,0,0,0.63) 100%);
+    } 
+}

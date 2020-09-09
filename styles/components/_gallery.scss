@@ -1,0 +1,89 @@
+.gallery {
+    display: flex;
+    // justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 100%;
+
+    .gallery_item {
+        position: relative;
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+
+
+        img {
+            display:block;
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: fill
+
+        }
+
+
+        .gallery_item_zoom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .3s ease;
+            border-radius: 50%;
+            background-color: #fff;
+            width: 85px;
+            height: 85px;
+            opacity: 0;
+            cursor: pointer;
+            z-index: 1;
+
+            
+            .background-zoom {
+                position: absolute;
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+                background-color: #fff;
+                transition: .5s ease;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            a {
+                font-size: 24px;
+                color: #151515;
+                font-weight: 500;
+                box-shadow: 0 0 10px rgba(255, 255, 255, .4);
+                text-decoration: none;
+                z-index: 2;
+
+            }
+
+        }
+    }
+
+    // .gallery_item:nth-child(n+4) {
+    //     max-width: 50%;
+    //     width: 50%;
+    // }
+
+    .gallery_item:hover {
+        .background-zoom {
+            transition: .5s ease;
+            opacity: .5;
+        }
+        .gallery_item_zoom {
+            opacity: 1;
+            transition: .5s ease;
+        }
+        
+        .gallery_item_zoom:hover {
+            .background-zoom {
+                transform: scale(1.2);
+                transition: .5s ease;
+            }
+        }
+    }
+}

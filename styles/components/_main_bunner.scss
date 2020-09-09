@@ -1,0 +1,44 @@
+.main-bunner {
+    position: relative;
+    overflow: hidden;
+
+    
+    .main-bunner-img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 100px; 
+        background: url('../images/bg-bunner-2.jpg') no-repeat;
+        background-size: 50% 50%;
+        background-size: cover;
+    }
+    
+    .main-bunner-inner {
+        text-align: center;
+        position: relative;
+        flex: 1;
+        z-index: 1;
+
+            h1 {
+                font-size: 35px;
+                letter-spacing: .01em;
+                color: #fff;
+                text-shadow: 0 4px 12px rgba(0,0,0,.3);
+                
+            }
+            .inner-box-decor {
+                width: 60px;
+                height: 3px;
+                background-color: #fff;
+                margin: 30px auto;
+            }
+            p {
+                font-size: 18px;
+                color: #fff;
+                text-shadow: 0 0 4px #000;
+                margin: 0 auto;
+            }
+    }
+    
+}

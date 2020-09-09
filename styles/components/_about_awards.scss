@@ -1,0 +1,39 @@
+.awards {
+    text-align: center;
+
+    .container {
+        h2 {
+            text-align: center;
+        }
+
+        .awards_column {
+            margin-bottom: -30px;
+            margin-top: 60px;
+
+            .awards_card {
+                margin-bottom: 30px;
+                flex: 0 0 50%;
+                max-width: 50%;
+
+                .clients_default {
+                    display: block;
+                    text-align: center;
+                    max-width: 270px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    transition: all .6s ease;
+
+                    img {
+                        width: 100%;
+                    }
+
+                }
+                .clients_default:hover {
+                    background: #fff;
+                    box-shadow: 0 0 15px rgba(21,21,21,.25);
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+}

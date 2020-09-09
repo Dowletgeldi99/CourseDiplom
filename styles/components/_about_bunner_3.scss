@@ -1,0 +1,51 @@
+.about_recom_section {
+    // background-color: #fff;
+    
+    .container {
+        text-align: center;
+
+        .recom_cards {
+            display: flex;
+            // justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 60px;
+            margin-bottom: -30px;
+
+            .recom_card {
+                margin-bottom: 30px;
+                display: flex;
+                padding: 0 5px;
+                flex-direction: column;
+                text-align: center;
+
+                .recom_card_img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    img {
+                        height: 72%;
+                        display: block;
+                        max-width: 100%;
+                        opacity: .7;
+                        width: 90px;
+                    }
+                }
+
+                .recom_card_text {
+                    margin-top: 25px;
+                    text-align: center;
+
+                    h4 {
+                        font-weight: 500;
+                        color: #151515;
+                    }
+                    
+                    p {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

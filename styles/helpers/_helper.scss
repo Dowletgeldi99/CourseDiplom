@@ -1,0 +1,129 @@
+h2, .heading-2 {
+    font-size: 28px;
+    line-height: 1.5;
+}
+
+h4, .heading-4 {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+a {
+    transition: all .3s ease-in-out;
+}
+
+a, a:focus, a:active {
+    color: #41a451;
+}
+a, a:focus, a:active, a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.big_pad {
+    padding: 50px 0;
+}
+
+.bg-grey {
+    background-color: #f5f5f5;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.section-135 {
+    padding: 50px 0;
+}
+
+.col_need {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.defis {
+    font-size: 0;
+    line-height: 0;
+}
+
+.defis::after {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: #41a451;
+}
+
+.decorate_triangle::before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 18px;
+    border-color: transparent transparent #d0efd5 transparent;
+    transform: rotate(137.76deg) translate(0,0);
+    will-change: transform;
+    transition: all .6s;
+}
+
+.decorate_rectangle::before {
+    width: 16px;
+    height: 16px;
+    transform: translateY(0) rotate(45deg);
+    background: #d0efd5;
+    will-change: transform;
+    transition: all .6s;
+}
+
+.decorate_circle::before {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #d0efd5;
+    transform: translate(0,0);
+    will-change: transform;
+    transition: all .6s;
+}
+
+.icon_phone, .icon_map , .icon_paper {
+    font-family: "fontisto";
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+}
+
+.icon_phone {
+    position: absolute;
+    left: 6%;
+}

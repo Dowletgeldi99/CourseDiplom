@@ -1,0 +1,93 @@
+.contacts {
+    .container {
+        text-align: center;
+
+        .row {
+            margin-bottom: -50px;
+
+            .contacts_card {
+                margin-bottom: 50px;
+                flex: 0 0 100%;
+                max-width: 100%;
+
+                .box_icon_classic {
+                    max-width: 320px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+
+                    .box_icon_inner {
+                        position: relative;
+
+                        .icon_xl {
+                            position: relative;
+                            z-index: 1;
+                            font-size: 90px;
+                            line-height: 0;
+                            
+                        }
+                        
+
+                        .icon_phone::before {
+                            content: "\eb1a";
+                            z-index: 2;
+                            
+                        }
+                        .icon_map::before {
+                            content: "\eb16";
+                            z-index: 2;
+                        }
+                        .icon_paper::before {
+                            content: "\e9ba";
+                            z-index: 2;
+                        }
+                    }
+
+                    .box_icon_inner::before {
+                        content: "";
+                        position: absolute;
+                        top: -17%;
+                        left: 55%;
+                        z-index: 0;
+                    }
+
+                    .box_icon_caption {
+                        margin-top: 18px;
+
+                        h4 {
+                            font-weight: 500;
+                            font-size: 26px;
+                            line-height: 1.38462;
+                            
+                            a {
+                                color: #151515;
+                            }
+
+                            a:hover {
+                                color: #41a451;
+                            }
+                        }
+
+                        p {
+                            color: rgba(21,21,21,.6);
+                            margin-top: 20px;
+                        }
+                    }
+                    
+                }
+
+                .box_icon_classic:hover {
+                    .decorate_triangle::before {
+                        transform: rotate(175deg) translate(15px,15px);
+                    }
+                    .decorate_circle::before {
+                        transform: translate(-45px,2px);
+                    }
+                    .decorate_rectangle::before {
+                        transform: rotate(-90deg) translateY(-40px);    
+                    }
+                }
+            }
+        }
+    }
+}

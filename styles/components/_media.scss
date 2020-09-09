@@ -1,0 +1,648 @@
+
+@media screen and (max-width: 992px) { //min-576
+    .page-header {
+        .page-header-outer {
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            text-align: center;
+
+
+            .navbar-main-elements {
+                display: none;
+            }
+
+            .btn-head {
+                display: none;
+            }
+            
+            .hamburger-wrapper {
+                display: block;
+                left: 10px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .bg_gray_1 {
+        .about_us {
+            padding-top: 300px;
+        }
+    }
+
+    .bg_gray_1 {
+        .form_section {
+            .form-card + .form-card::before {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px ) {
+    .container {
+        max-width: 93%;
+    }
+
+    .bg_gray_1 {
+        .form_section {
+            .form-card + .form-card::before {
+                visibility: hidden;
+            }
+        }
+    }
+
+    .news {
+        .container_news {
+            .carousel {
+                .card_item {
+                    .card_item_title {
+                        a {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main-bunner {
+        .main-bunner-inner {
+            h1 {
+                font-size: 45px;
+            }
+        }
+    }
+
+    .bg_gray_1{
+        .form_section {
+            .container {
+                .box-booking {
+                    // height: 300px;
+                    .booking-form {
+                        padding-bottom: 10px;
+                        .form-card {
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                            
+                            label {
+                                width: 100%;
+                                max-width: 100%;
+                            }
+                        }
+                        .btn-form {
+                            flex: 0 0 50%;
+                            max-width: 50%;
+                            padding: 14px 15px;  
+                        }
+                    }
+                }
+            }
+        }
+
+        .about_us {
+            padding-top: 190px;
+        }
+    }
+
+    .gallery {
+        .gallery_item {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        .gallery_item:nth-child(3) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        .gallery_item:nth-child(n+4) {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .about_recom_section {
+        .container {
+            .recom_cards {
+                .recom_card {
+                    flex-direction: row;
+                    text-align: left;
+
+                    .recom_card_text {
+                        margin-top: 0;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    .form_section {
+        .box-booking {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+            .booking-form {
+                margin-bottom: -30px;
+                
+                .form-card:nth-child(1) {
+                    flex: 0 0 28%;
+                    max-width: 28%;
+                    margin-bottom: 30px;
+                }
+                .form-card:nth-child(2) {
+                    flex: 0 0 29%;
+                    max-width: 29%;
+                    margin-bottom: 30px;
+                }
+                .form-card:nth-child(3) {
+                    flex: 0 0 23%;
+                    max-width: 23%;
+                    margin-bottom: 30px;
+                }
+                .form-card:nth-child(4) {
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                    margin-bottom: 30px;
+                }
+                .btn-form {
+                    margin-bottom: 30px;
+                }
+            }
+        }  
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .section-135 {
+        padding: 100px 0;
+    }
+
+    .big_pad {
+        padding: 85px 0;
+    }
+
+    .container {
+        max-width: 93%;
+    }
+
+    .main-bunner {
+        .main-bunner-inner {
+            h1 {
+                font-size: 60px;
+            }
+        }
+    }
+    
+    .footer {
+        .footer_up {
+            flex-direction: row;
+
+            .logo {
+                max-width: 50%;
+                width: 130px;
+
+            }
+
+            .footer_soc_list {
+                max-width: 50%;
+            }
+        }
+    }
+
+    .menu {
+        .container_menu {
+            .menu_table {
+                .table_top {
+                    ul {
+                        padding: 40px 30px;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        li {
+                            a {
+                                font-size: 18px;
+                                padding: 35px 25px;
+                            }
+                        }
+
+                        li + li {
+                            margin-left: 30px;
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .offers {
+        .text-center{
+            .text {
+                width: 75%;
+            }
+        }
+        
+        .columns {
+            .column_big {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+
+    .gallery {
+        .gallery_item {
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+        }
+
+        .gallery_item:nth-child(3) {
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+        }
+
+        .gallery_item:nth-child(n+4) {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    .about_recom_section {
+        .container {
+            .recom_cards {
+                margin-bottom: -60px;
+
+                .recom_card {
+                    margin-bottom: 60px;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+    .contacts {
+        .container {
+            .row {
+                .contacts_card {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+    .bg_gray_1 {
+        .about_us {
+            padding-top: 115px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .big_pad {
+        padding: 100px 0;
+    }
+
+    .page-header {
+        .page-header-outer {
+            .logo {
+                width: 130px;
+            }
+        }
+    }
+
+    
+
+    .main-bunner {
+        min-height: 200vh;
+        height: 150vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .main-bunner-inner {
+            h1 {
+                font-size: 80px;
+                line-height: 1.075;
+            }    
+        }
+    }
+
+    .section-135 {
+        padding: 115px 0;
+    }
+
+    .container {
+        max-width: 96%;
+    }
+
+    .bg_gray_1 {
+        .form_section {
+            transform: translateY(-50%);
+            
+            .box-booking {
+                padding-top: 40px;
+                padding-bottom: 40px;
+    
+                .form-card:nth-child(1) {
+                    flex: 0 0 23%;
+                    max-width: 23%
+                }
+                .form-card:nth-child(2) {
+                    flex: 0 0 23%;
+                    max-width: 23%
+                }
+                .form-card:nth-child(3) {
+                    flex: 0 0 20%;
+                    max-width: 20%
+                }
+                .form-card:nth-child(4) {
+                    flex: 0 0 16%;
+                    max-width: 16%
+                }
+                .btn-form {
+                    flex: 0 0 18%;
+                    max-width: 18%;
+                    // margin-left: 1px;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .about_us {
+            padding-top: 0!important;
+            .align_center_about_us {
+                align-items: center!important;
+
+                .about_us_card_img {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+
+                .about_us_cards_text {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+    .offers {
+        .container {
+            .text-center {
+                .text {
+                    width: 58.33333%;
+                }
+            }
+
+            .columns {
+                margin-bottom: -30px;
+
+                .column_big {
+                    margin-bottom: 30px;
+                    max-width: 33.3%;
+                    flex: 0 0 33.3%;
+
+                    .column_bottom {
+                        padding: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .badge {
+        font-size: 15px;
+    }
+
+    .about_bunner_2 {
+        .container {
+            .column_big {
+                .column_big_img {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+
+                .column_big_text {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+        }
+    }
+
+    .about_recom_section {
+        .container {
+            .recom_cards {
+                .recom_card {
+                    flex: 0 0 33.3%;
+                    max-width: 33.3%;
+                }
+            }
+        }
+    }
+
+    .awards {
+        .container {
+            .awards_column {
+                .awards_card {
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                }
+            }
+        }
+    }
+
+    .contacts {
+        .container {
+            .row {
+                .contacts_card {
+                    flex: 0 0 33.3%;
+                    max-width: 33.3%;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    h2, .heading-2 {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+    h4, .heading-4 {
+        font-size: 26px;
+        line-height: 1.38462;
+    }
+    
+    .big_pad {
+        padding: 115px 0;
+
+        .main-bunner-img {
+            left: 0px;
+            right: 0px;
+            bottom: -10px;
+            top: 100px;
+        }
+    }
+
+    .section-135 {
+        padding: 135px 0;
+    }
+
+    .container {
+        max-width: 80%;
+    }
+
+    .bg_gray_1 {
+        .form_section {
+            .box-booking {
+                padding: 66px 40px;
+    
+                .booking-form {
+                    margin-left: -30px;
+                    
+                    button {
+                        padding: 18px 20px;
+                        font-size: 15px;
+                    }
+                
+                }
+            }
+        }
+    }
+
+    .about_us {
+        .about_us_content {
+            justify-content: space-between!important;
+
+            .about_us_cards_text {
+                max-width: 41.66667;
+                flex: 0 0 41.66667%;
+
+                h2 {
+                    font-size: 45px;
+                    line-height: 1.2;
+                }
+            }
+        }
+    }
+
+    .offers {
+        .container {
+            .columns {
+                margin-top: 60px;
+            }
+        }
+    }
+
+}
+
+@media (prefers-color-scheme: light) {
+    
+    body {
+        color: rgba(21,21,21,.8);
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        color: #151515;
+    }
+
+    .bg-grey {
+        background-color: #f5f5f5; 
+    }
+
+    .bg-white {
+        background-color: #fff;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #fff;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        color: #fff!important;
+    }
+
+    a {
+        color: #fff!important;
+    }
+
+    a:hover {
+        color: $color-hover!important;
+    }
+
+    .footer {
+        .footer_bot {
+            p {
+                color: #fff!important;
+            }
+        }
+    }
+
+    p {
+        color: $color-blue!important;
+    }
+
+    .bg-grey, .bg-white {
+        background-color: $color-body!important;
+    }
+
+    .page-header {
+        .btn-head {
+            a {
+                color: $color-blue!important;
+            }
+
+            a:hover {
+                color: #fff!important;
+            }
+        }
+    }
+
+    .about_recom_section {
+        .recom_card {
+            .recom_card_text {
+                p {
+                    color: #fff!important;
+                }
+            }
+        }
+    }
+
+    .offers {
+        .column_big {
+            .column_bottom {
+                background-color: rgba(21,21,21,.8)!important;
+
+                p {
+                    color:#fff!important;
+                }
+            }
+        }
+    }
+
+    .menu {
+        .dish {
+            a {
+                color: #151515!important;
+            }
+
+            a:hover {
+                color: $color-hover!important;
+            }
+        }
+    }
+    
+}
